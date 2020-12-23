@@ -1,5 +1,14 @@
+# Web
 node_modules
 .DS_Store
 dist
 dist-ssr
 *.local
+
+# Wasm
+/target
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log

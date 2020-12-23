@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "build:wasm": "wasm-pack build"
   },
   "dependencies": {
-    "vue": "^3.0.4"
+    "vue": "^3.0.4",
+    "wasm-pack": "^0.9.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.1",
