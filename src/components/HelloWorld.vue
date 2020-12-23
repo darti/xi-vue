@@ -1,17 +1,21 @@
-<template></template>
+<template>
+  <button @click="greet()">Greeting from wasm</button>
+</template>
 
 <script lang="ts">
-import { ref } from "vue"
-import init from "../../pkg/xi_wasm_bg.wasm"
+import { defineComponent, ref } from "vue"
+import init, { greet } from "../../pkg/xi_wasm"
 
-export default {
+export default defineComponent({
   props: {
     msg: String,
   },
   async setup() {
     await init()
 
-    return {}
+    return {
+      greet: greet,
+    }
   },
-}
+})
 </script>
