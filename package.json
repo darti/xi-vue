@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "dev:wasm": "cargo watch -i .gitignore -s 'yarn build:wasm'",
+    "dev:wasm": "cargo watch -i 'src-js/**' -s 'yarn build:wasm'",
     "build": "vite build",
     "build:wasm": "wasm-pack build --target web"
   },
