@@ -9,7 +9,7 @@
         "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
         "sourceMap": true,
-        "baseUrl": "src-js",
+        "baseUrl": ".",
         "experimentalDecorators": true,
         // "isolatedModules": true,
         "lib": [
@@ -19,6 +19,9 @@
         "paths": {
             "@/*": [
                 "src-js/*"
+            ],
+            "+/*": [
+                "pkg/*"
             ]
         }
     }

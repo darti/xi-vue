@@ -1,5 +1,6 @@
 <template>
   <div id="greetings">
+    📦
     <label for="name">Your name</label>
     <input id="name" placeholder="Rusty" v-model="name" />
     <button @click="greet(name)">Greeting from rust</button>
@@ -8,7 +9,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue"
-import init, { greet } from "../../pkg/xi_wasm"
+import init, { greet } from "+/xi_wasm"
 
 export default defineComponent({
   props: {
