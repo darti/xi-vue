@@ -1,6 +1,8 @@
 import { UserConfig } from "vite"
 
 // Completion !
-const config: UserConfig = {}
+const config: UserConfig = {
+  plugins: [],
+}
 
 export default config

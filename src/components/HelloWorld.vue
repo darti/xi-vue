@@ -1,23 +1,17 @@
-<template>
-  <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
-</template>
+<template></template>
 
 <script lang="ts">
 import { ref } from "vue"
+import init from "../../pkg/xi_wasm_bg.wasm"
 
 export default {
   props: {
     msg: String,
   },
-  setup() {
-    const count = ref(0)
-    return {
-      count,
-    }
+  async setup() {
+    await init()
+
+    return {}
   },
 }
 </script>
